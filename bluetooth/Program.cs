@@ -7,6 +7,8 @@ namespace bluetooth
 {
     static class Program
     {
+        public static string PortName { get; internal set; }
+
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -15,7 +17,7 @@ namespace bluetooth
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Form());
         }
     }
 }
